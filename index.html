@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saksham Arora — B.Tech CSE Student & Developer</title>
+<meta name="description" content="Portfolio of Saksham Arora, B.Tech CSE (3rd Year) student at CGC University, Mohali. Building small tools, one release at a time.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <a href="#home" class="brand"><span class="cursor-dot"></span> saksham.dev</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">&#9776;</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#log">Build Log</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#contact" class="nav-cta">Say hi</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="wrap">
+    <div>
+      <h1>Hey, I'm <span class="accent">Saksham.</span></h1>
+      <p class="role">B.Tech CSE, 3rd Year — CGC University, Mohali</p>
+      <p class="desc">I'm early in my CS degree and learning by shipping small, complete things:
+        boards, trackers, clones, generators. Every project below is a working build, not a tutorial follow-along.</p>
+      <div class="btn-row">
+        <a href="#log" class="btn btn-primary">See the build log</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+    </div>
+
+    <div class="status-panel">
+      <div class="status-bar">
+        <span>~/saksham — status</span>
+        <span class="dots"><span></span><span></span><span></span></span>
+      </div>
+      <div class="status-body">
+        <div class="status-row"><span class="k">name</span><span class="v">Saksham Arora</span></div>
+        <div class="status-row"><span class="k">track</span><span class="v">B.Tech, CSE</span></div>
+        <div class="status-row"><span class="k">year</span><span class="v">3rd Year</span></div>
+        <div class="status-row"><span class="k">college</span><span class="v">CGC University, Mohali</span></div>
+        <div class="status-row"><span class="k">cgpa</span><span class="v">7.65</span></div>
+        <div class="status-row"><span class="k">status</span><span class="v pill">open to opportunities</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <span class="eyebrow reveal">about</span>
+    <h2 class="section-title reveal">Three years in, nine builds deep.</h2>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>I'm a third-year Computer Science Engineering student, and by now most of what
+          I know has come from shipping real, working things rather than just clearing exams.
+          I'd rather have nine small, working projects than one half-finished big idea.</p>
+        <p>That means solid front-end fundamentals — HTML, CSS, and JavaScript — plus backend
+          and API work to make things actually function: logins that authenticate,
+          boards that save state, generators that generate. I'm maintaining a
+          <strong>7.65 CGPA</strong> while doing it.</p>
+        <p>Everything in my build log below is real, running code — check the links.</p>
+      </div>
+      <div class="info-card reveal">
+        <div class="info-row">
+          <div class="ic">🎓</div>
+          <div><div class="lbl">Education</div><div class="val">B.Tech CSE, 3rd Year — CGC University, Mohali</div></div>
+        </div>
+        <div class="info-row">
+          <div class="ic">📊</div>
+          <div><div class="lbl">Current CGPA</div><div class="val">7.65</div></div>
+        </div>
+        <div class="info-row">
+          <div class="ic">📍</div>
+          <div><div class="lbl">Based in</div><div class="val">Mohali, Punjab, India</div></div>
+        </div>
+        <div class="info-row">
+          <div class="ic">💻</div>
+          <div><div class="lbl">Focus</div><div class="val">Web development, JavaScript, learning AI fundamentals</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" style="background:var(--paper-dim);">
+  <div class="wrap">
+    <span class="eyebrow reveal">skills</span>
+    <h2 class="section-title reveal">What I'm working with.</h2>
+    <p class="section-sub reveal">The toolkit I actually use — growing with every project I ship.</p>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <h4><span class="num">01</span> Frontend</h4>
+        <div class="chip-row">
+          <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip">Bootstrap</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <h4><span class="num">02</span> Backend &amp; APIs</h4>
+        <div class="chip-row">
+          <span class="chip">Node.js</span><span class="chip">Express</span><span class="chip">MongoDB</span><span class="chip">REST APIs</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <h4><span class="num">03</span> Tools</h4>
+        <div class="chip-row">
+          <span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">VS Code</span><span class="chip">Postman</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BUILD LOG / PROJECTS -->
+<section id="log">
+  <div class="wrap">
+    <span class="eyebrow reveal">build log</span>
+    <h2 class="section-title reveal">Nine releases in, so far.</h2>
+    <p class="section-sub reveal">Each one shipped as a standalone build. Links go to the live version and the source — swap in your repo URLs as you push them.</p>
+
+    <div class="log">
+
+      <div class="log-entry reveal">
+        <div class="log-head">
+          <span class="log-version">v0.1</span>
+          <span class="log-title">Kanban Board</span>
+          <span class="log-tag">Productivity</span>
+        </div>
+        <p class="log-desc">A drag-and-drop task board with columns for tracking work in progress, done purely in vanilla JS.</p>
+        <div class="log-actions">
+          <a href="#" target="_blank" rel="noopener">Live demo →</a>
+          <a href="https://github.com/skshmm11/kanban-board" target="_blank" rel="noopener">Source code →</a>
+        </div>
+      </div>
+
+      <div class="log-entry reveal">
+        <div class="log-head">
+          <span class="log-version">v0.2</span>
+          <span class="log-title">Login Page</span>
+          <span class="log-tag">Auth</span>
+        </div>
+        <p class="log-desc">A clean sign-in / sign-up flow with form validation and session handling.</p>
+        <div class="log-actions">
+          <a href="#" target="_blank" rel="noopener">Live demo →</a>
+          <a href="https://github.com/skshmm11/login-page" target="_blank" rel="noopener">Source code →</a>
+        </div>
+      </div>
+
+      <div class="log-entry reveal">
+        <div class="log-head">
+          <span class="log-version">v0.3</span>
+          <span class="log-title">Student Board</span>
+          <span class="log-tag">Full-stack</span>
+        </div>
+        <p class="log-desc">A record-keeping app for student data — create, update, and delete entries against a database.</p>
+        <div class="log-actions">
+          <a href="#" target="_blank" rel="noopener">Live demo →</a>
+          <a href="https://github.com/skshmm11/student-board" target="_blank" rel="noopener">Source code →</a>
+        </div>
+      </div>
+
+      <div class="log-entry reveal">
+        <div class="log-head">
+          <span class="log-version">v0.4</span>
+          <span class="log-title">Typing Test</span>
+          <span class="log-tag">Game / Utility</span>
+        </div>
+        <p class="log-desc">A speed-typing game that scores words-per-minute and accuracy in real time.</p>
+        <div class="log-actions">
+          <a href="#" target="_blank" rel="noopener">Live demo →</a>
+          <a href="https://github.com/skshmm11/typing-test" target="_blank" rel="noopener">Source code →</a>
+        </div>
+      </div>
+
+      <div class="log-entry reveal">
+        <div class="log-head">
+          <span class="log-version">v0.5</span>
+          <span class="log-title">Weather Forecast</span>
+          <span class="log-tag">API</span>
+        </div>
+        <p class="log-desc">Live weather lookup by city, pulling current conditions and forecast from a public weather API.</p>
+        <div class="log-actions">
+          <a href="#" target="_blank" rel="noopener">Live demo →</a>
+          <a href="https://github.com/skshmm11/weather-forecast" target="_blank" rel="noopener">Source code →</a>
+        </div>
+      </div>
+
+      <div class="log-entry reveal">
+        <div class="log-head">
+          <span class="log-version">v0.6</span>
+          <span class="log-title">Netflix Clone</span>
+          <span class="log-tag">UI Clone</span>
+        </div>
+        <p class="log-desc">A pixel-close recreation of Netflix's browsing UI — hero banner, carousels, and hover previews.</p>
+        <div class="log-actions">
+          <a href="#" target="_blank" rel="noopener">Live demo →</a>
+          <a href="https://github.com/skshmm11/netflix-clone" target="_blank" rel="noopener">Source code →</a>
+        </div>
+      </div>
+
+      <div class="log-entry reveal">
+        <div class="log-head">
+          <span class="log-version">v0.7</span>
+          <span class="log-title">QR Code Generator</span>
+          <span class="log-tag">Utility</span>
+        </div>
+        <p class="log-desc">Turns any text or URL into a downloadable QR code, generated client-side.</p>
+        <div class="log-actions">
+          <a href="#" target="_blank" rel="noopener">Live demo →</a>
+          <a href="https://github.com/skshmm11/qr-code-generator" target="_blank" rel="noopener">Source code →</a>
+        </div>
+      </div>
+
+      <div class="log-entry reveal">
+        <div class="log-head">
+          <span class="log-version">v0.8</span>
+          <span class="log-title">To-Do List</span>
+          <span class="log-tag">Productivity</span>
+        </div>
+        <p class="log-desc">A task list with add, complete, and delete actions, persisted so nothing's lost on refresh.</p>
+        <div class="log-actions">
+          <a href="#" target="_blank" rel="noopener">Live demo →</a>
+          <a href="https://github.com/skshmm11/to-do-list" target="_blank" rel="noopener">Source code →</a>
+        </div>
+      </div>
+
+      <div class="log-entry reveal">
+        <div class="log-head">
+          <span class="log-version">v0.9</span>
+          <span class="log-title">ATM Machine</span>
+          <span class="log-tag">Simulation</span>
+        </div>
+        <p class="log-desc">A simulated ATM flow — PIN entry, balance check, withdraw, and deposit logic.</p>
+        <div class="log-actions">
+          <a href="#" target="_blank" rel="noopener">Live demo →</a>
+          <a href="https://github.com/skshmm11/atm-machine" target="_blank" rel="noopener">Source code →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-panel">
+      <div>
+        <span class="eyebrow">contact</span>
+        <h2>Let's talk.</h2>
+        <p>Open to internships, collaborations, or just talking shop about a project below. Reach out directly or use the form.</p>
+        <div class="contact-links">
+          <a href="mailto:arorasaksham773@gmail.com"><span class="ic">✉</span> arorasaksham773@gmail.com</a>
+          <a href="https://github.com/skshmm11" target="_blank" rel="noopener"><span class="ic">⌥</span> github.com/skshmm11</a>
+          <a href="https://www.linkedin.com/in/saksham-arora-978682325" target="_blank" rel="noopener"><span class="ic">in</span> LinkedIn Profile</a>
+          <a href="tel:+919700013904"><span class="ic">☎</span> +91 97000 13904</a>
+        </div>
+      </div>
+      <div>
+        <form id="contactForm" novalidate>
+          <div class="field">
+            <label for="cName">Name</label>
+            <input type="text" id="cName" placeholder="Your name" required>
+          </div>
+          <div class="field">
+            <label for="cEmail">Email</label>
+            <input type="email" id="cEmail" placeholder="you@example.com" required>
+          </div>
+          <div class="field">
+            <label for="cMessage">Message</label>
+            <textarea id="cMessage" rows="4" placeholder="What's up?" required></textarea>
+          </div>
+          <button type="submit" class="btn-send">Send message</button>
+          <div id="formStatus"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>&copy; <span id="year"></span> Saksham Arora.</span>
+  <span class="mono">built with html, css & js</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
