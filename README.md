@@ -24,8 +24,13 @@ I'm a 3rd-year B.Tech CSE student at CGC University, Mohali. This site is a runn
 
 - Responsive layout (mobile, tablet, desktop)
 - Scroll-reveal animations on section entry
-- "Build log" style project section with version tags
-- Contact form that opens the visitor's email client directly — no backend required
+- Scroll progress bar and scrollspy nav (active link highlights as you scroll)
+- Typewriter effect cycling through roles in the hero
+- Animated stat counters (projects shipped, CGPA, etc.)
+- Filterable "build log" — sort projects by category (Frontend / Full-stack / API / Utility)
+- Copy-to-clipboard for email, with toast confirmation
+- Contact form with real-time field validation, then opens the visitor's email client — no backend required
+- Back-to-top button
 - Accessible focus states and reduced-motion support
 
 ## Project structure
