@@ -31,7 +31,7 @@ a{color:inherit; text-decoration:none;}
 img{max-width:100%;}
 ::selection{background:var(--accent-soft); color:var(--accent-ink);}
 
-.wrap{max-width:1120px; margin:0 auto; padding:0 1.5rem;}
+.wrap{max-width:1120px; margin:0 auto; padding:0 1.5rem;display:flex; text-align:center;}
 section{padding:6rem 0;}
 @media (max-width:768px){ section{padding:4rem 0;} }
 
