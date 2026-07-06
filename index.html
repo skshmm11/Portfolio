@@ -13,18 +13,16 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="scroll-progress" id="scrollProgress"></div>
-<div class="toast" id="toast"></div>
 
 <header>
   <nav class="nav">
     <a href="#home" class="brand"><span class="cursor-dot"></span> saksham.dev</a>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">&#9776;</button>
     <ul class="nav-links" id="navLinks">
-      <li><a href="#about" data-section="about">About</a></li>
-      <li><a href="#skills" data-section="skills">Skills</a></li>
-      <li><a href="#log" data-section="log">Build Log</a></li>
-      <li><a href="#contact" data-section="contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#log">Build Log</a></li>
+      <li><a href="#contact">Contact</a></li>
       <li><a href="#contact" class="nav-cta">Say hi</a></li>
     </ul>
   </nav>
@@ -35,7 +33,7 @@
   <div class="wrap">
     <div>
       <h1>Hey, I'm <span class="accent">Saksham.</span></h1>
-      <p class="role"><span id="typedRole">B.Tech CSE, 3rd Year</span><span class="type-cursor">|</span></p>
+      <p class="role">B.Tech CSE, 3rd Year — CGC University, Mohali</p>
       <p class="desc">I'm early in my CS degree and learning by shipping small, complete things:
         boards, trackers, clones, generators. Every project below is a working build, not a tutorial follow-along.</p>
       <div class="btn-row">
@@ -96,25 +94,6 @@
         </div>
       </div>
     </div>
-
-    <div class="stats-row reveal">
-      <div class="stat-card">
-        <div class="stat-num" data-target="9">0</div>
-        <div class="stat-label">Projects shipped</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-num" data-target="7.65" data-decimal="true">0</div>
-        <div class="stat-label">Current CGPA</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-num" data-target="3" data-suffix="rd">0</div>
-        <div class="stat-label">Year of B.Tech CSE</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-num" data-target="100" data-suffix="%">0</div>
-        <div class="stat-label">Vanilla JS, no shortcuts</div>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -154,17 +133,9 @@
     <h2 class="section-title reveal">Nine releases in, so far.</h2>
     <p class="section-sub reveal">Each one shipped as a standalone build. Links go to the live version and the source — swap in your repo URLs as you push them.</p>
 
-    <div class="log-filters reveal" id="logFilters">
-      <button class="filter-btn active" data-filter="all">All</button>
-      <button class="filter-btn" data-filter="frontend">Frontend</button>
-      <button class="filter-btn" data-filter="fullstack">Full-stack</button>
-      <button class="filter-btn" data-filter="api">API</button>
-      <button class="filter-btn" data-filter="utility">Utility</button>
-    </div>
+    <div class="log">
 
-    <div class="log" id="logList">
-
-      <div class="log-entry reveal" data-tag="frontend">
+      <div class="log-entry reveal">
         <div class="log-head">
           <span class="log-version">v0.1</span>
           <span class="log-title">Kanban Board</span>
@@ -172,11 +143,12 @@
         </div>
         <p class="log-desc">A drag-and-drop task board with columns for tracking work in progress, done purely in vanilla JS.</p>
         <div class="log-actions">
+          <a href="#" target="_blank" rel="noopener">Live demo →</a>
           <a href="https://github.com/skshmm11/kanban-board" target="_blank" rel="noopener">Source code →</a>
         </div>
       </div>
 
-      <div class="log-entry reveal" data-tag="fullstack">
+      <div class="log-entry reveal">
         <div class="log-head">
           <span class="log-version">v0.2</span>
           <span class="log-title">Login Page</span>
@@ -184,11 +156,12 @@
         </div>
         <p class="log-desc">A clean sign-in / sign-up flow with form validation and session handling.</p>
         <div class="log-actions">
+          <a href="#" target="_blank" rel="noopener">Live demo →</a>
           <a href="https://github.com/skshmm11/login-page" target="_blank" rel="noopener">Source code →</a>
         </div>
       </div>
 
-      <div class="log-entry reveal" data-tag="fullstack">
+      <div class="log-entry reveal">
         <div class="log-head">
           <span class="log-version">v0.3</span>
           <span class="log-title">Student Board</span>
@@ -196,11 +169,12 @@
         </div>
         <p class="log-desc">A record-keeping app for student data — create, update, and delete entries against a database.</p>
         <div class="log-actions">
+          <a href="#" target="_blank" rel="noopener">Live demo →</a>
           <a href="https://github.com/skshmm11/student-board" target="_blank" rel="noopener">Source code →</a>
         </div>
       </div>
 
-      <div class="log-entry reveal" data-tag="frontend">
+      <div class="log-entry reveal">
         <div class="log-head">
           <span class="log-version">v0.4</span>
           <span class="log-title">Typing Test</span>
@@ -208,11 +182,12 @@
         </div>
         <p class="log-desc">A speed-typing game that scores words-per-minute and accuracy in real time.</p>
         <div class="log-actions">
+          <a href="#" target="_blank" rel="noopener">Live demo →</a>
           <a href="https://github.com/skshmm11/typing-test" target="_blank" rel="noopener">Source code →</a>
         </div>
       </div>
 
-      <div class="log-entry reveal" data-tag="api">
+      <div class="log-entry reveal">
         <div class="log-head">
           <span class="log-version">v0.5</span>
           <span class="log-title">Weather Forecast</span>
@@ -220,11 +195,12 @@
         </div>
         <p class="log-desc">Live weather lookup by city, pulling current conditions and forecast from a public weather API.</p>
         <div class="log-actions">
+          <a href="#" target="_blank" rel="noopener">Live demo →</a>
           <a href="https://github.com/skshmm11/weather-forecast" target="_blank" rel="noopener">Source code →</a>
         </div>
       </div>
 
-      <div class="log-entry reveal" data-tag="frontend">
+      <div class="log-entry reveal">
         <div class="log-head">
           <span class="log-version">v0.6</span>
           <span class="log-title">Netflix Clone</span>
@@ -232,11 +208,12 @@
         </div>
         <p class="log-desc">A pixel-close recreation of Netflix's browsing UI — hero banner, carousels, and hover previews.</p>
         <div class="log-actions">
+          <a href="#" target="_blank" rel="noopener">Live demo →</a>
           <a href="https://github.com/skshmm11/netflix-clone" target="_blank" rel="noopener">Source code →</a>
         </div>
       </div>
 
-      <div class="log-entry reveal" data-tag="utility">
+      <div class="log-entry reveal">
         <div class="log-head">
           <span class="log-version">v0.7</span>
           <span class="log-title">QR Code Generator</span>
@@ -244,11 +221,12 @@
         </div>
         <p class="log-desc">Turns any text or URL into a downloadable QR code, generated client-side.</p>
         <div class="log-actions">
+          <a href="#" target="_blank" rel="noopener">Live demo →</a>
           <a href="https://github.com/skshmm11/qr-code-generator" target="_blank" rel="noopener">Source code →</a>
         </div>
       </div>
 
-      <div class="log-entry reveal" data-tag="frontend">
+      <div class="log-entry reveal">
         <div class="log-head">
           <span class="log-version">v0.8</span>
           <span class="log-title">To-Do List</span>
@@ -256,11 +234,12 @@
         </div>
         <p class="log-desc">A task list with add, complete, and delete actions, persisted so nothing's lost on refresh.</p>
         <div class="log-actions">
+          <a href="#" target="_blank" rel="noopener">Live demo →</a>
           <a href="https://github.com/skshmm11/to-do-list" target="_blank" rel="noopener">Source code →</a>
         </div>
       </div>
 
-      <div class="log-entry reveal" data-tag="utility">
+      <div class="log-entry reveal">
         <div class="log-head">
           <span class="log-version">v0.9</span>
           <span class="log-title">ATM Machine</span>
@@ -268,6 +247,7 @@
         </div>
         <p class="log-desc">A simulated ATM flow — PIN entry, balance check, withdraw, and deposit logic.</p>
         <div class="log-actions">
+          <a href="#" target="_blank" rel="noopener">Live demo →</a>
           <a href="https://github.com/skshmm11/atm-machine" target="_blank" rel="noopener">Source code →</a>
         </div>
       </div>
@@ -285,10 +265,7 @@
         <h2>Let's talk.</h2>
         <p>Open to internships, collaborations, or just talking shop about a project below. Reach out directly or use the form.</p>
         <div class="contact-links">
-          <span class="contact-row">
-            <a href="mailto:arorasaksham773@gmail.com"><span class="ic">✉</span> arorasaksham773@gmail.com</a>
-            <button class="copy-btn" data-copy="arorasaksham773@gmail.com" aria-label="Copy email address">Copy</button>
-          </span>
+          <a href="mailto:arorasaksham773@gmail.com"><span class="ic">✉</span> arorasaksham773@gmail.com</a>
           <a href="https://github.com/skshmm11" target="_blank" rel="noopener"><span class="ic">⌥</span> github.com/skshmm11</a>
           <a href="https://www.linkedin.com/in/saksham-arora-978682325" target="_blank" rel="noopener"><span class="ic">in</span> LinkedIn Profile</a>
           <a href="tel:+919700013904"><span class="ic">☎</span> +91 97000 13904</a>
@@ -299,17 +276,14 @@
           <div class="field">
             <label for="cName">Name</label>
             <input type="text" id="cName" placeholder="Your name" required>
-            <span class="field-error" id="errName"></span>
           </div>
           <div class="field">
             <label for="cEmail">Email</label>
             <input type="email" id="cEmail" placeholder="you@example.com" required>
-            <span class="field-error" id="errEmail"></span>
           </div>
           <div class="field">
             <label for="cMessage">Message</label>
             <textarea id="cMessage" rows="4" placeholder="What's up?" required></textarea>
-            <span class="field-error" id="errMessage"></span>
           </div>
           <button type="submit" class="btn-send">Send message</button>
           <div id="formStatus"></div>
@@ -323,8 +297,6 @@
   <span>&copy; <span id="year"></span> Saksham Arora.</span>
   <span class="mono">built with html, css & js</span>
 </footer>
-
-<button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
 
 <script src="script.js"></script>
 </body>
